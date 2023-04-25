@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::resource('users',\App\Http\Controllers\UserController::class);
+Route::post('accounts','\App\Http\Controllers\AccountController@createUserAccount');
+Route::post('transaction','\App\Http\Controllers\AccountController@makeTransaction');
